@@ -1,0 +1,207 @@
+<!-- Coded By Microtip -->
+<!-- Team: J.S.T - DXNZ SYSTEM -->
+<!-- Time Code: Sun, 24-apr-2026, 16.50pm -->
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="https://a.top4top.io/p_3474yjaag0.png"
+            type="image/png"
+        />
+        <title>J.S.T - Dark Theme</title>
+        <!-- GOOGLE FONT -->
+        <!-- Oswald -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Archivo Black -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Alfa Slab One -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bebas Neue -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <!-- STYLE CSS -->
+        <style type="text/css" media="all">
+            body {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                user-select: none;
+                background-color: #101010;
+                background-image: url("https://j.top4top.io/p_3705q4ljd2.gif");
+                background-size: cover;
+            }
+
+            #intro-screen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                transition: opacity 1.5s ease;
+            }
+
+            #intro-text {
+                color: white;
+                font-family: Courier New;
+                font-weight: bold;
+                font-size: 30px;
+                animation: blink 1.5s infinite;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.3;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .fade-out {
+                opacity: 0;
+            }
+
+            #title {
+                margin-top: 20px;
+                color: aqua;
+                font-weight: bold;
+                font-family: "Archivo Black", Sans-Serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-size: 40px;
+            }
+
+            #logo {
+                border-radius: 200px;
+                border: 6px none white;
+                box-shadow: 0 0 10px white;
+            }
+
+            #team-name {
+                color: red;
+                font-family: "Oswald", Sans-Serif;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 40px;
+                margin: 20px;
+                text-shadow: 0 0 10px red;
+            }
+
+            .container {
+                margin: 5vw;
+                color: white;
+                font-family: "Bitcount Grid Double", system-ui;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-size: 21px;
+                font-style: normal;
+                text-shadow:
+                    0 0 10px white,
+                    0 0 40px white;
+            }
+
+            .container h2 {
+                white-space: nowrap;
+            }
+
+            h2 {
+                margin: 4px;
+            }
+
+            #tag {
+                margin-top: 40px;
+                font-family: Courier New;
+                color: lime;
+            }
+
+            span {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="intro-screen">
+            <div id="intro-text">Tap Here</div>
+        </div>
+
+        <h1 id="title">MICROTIP</h1>
+
+        <img
+            id="logo"
+            src="https://h.top4top.io/p_3705yj8hx0.jpg"
+            alt="SAD SYSTEM"
+            width="200px"
+            height="200px"
+        />
+
+        <h2 id="team-name">JakartaSecTeam</h2>
+
+        <div class="container">
+            <h2>We Always Here</h2>
+            <h2>We Always Alive</h2>
+            <h2>We Always Fixed</h2>
+            <h2>We Do Not Forget</h2>
+            <h2>We Here For <span>Justice</span></h2>
+            <h2>And <span>Humanity.</span></h2>
+        </div>
+
+        <h3 id="tag"># J.S.T # DNXZ SYSTEM # HACKTIVIST</h3>
+        <audio
+            id="bg-music"
+            src="https://i.top4top.io/m_3705y5bjl1.mp3"
+            loop
+        ></audio>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            const intro = document.getElementById("intro-screen");
+            const music = document.getElementById("bg-music");
+
+            intro.addEventListener("click", function () {
+                music.play();
+
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                }
+
+                intro.classList.add("fade-out");
+
+                setTimeout(() => {
+                    intro.style.display = "none";
+                }, 1500);
+            });
+        </script>
+    </body>
+</html>
+<!-- Last Art By AnomBF/Microtip/AnomBF -->
+<!-- Note: We Are Anonymous, Expect Us! -->
